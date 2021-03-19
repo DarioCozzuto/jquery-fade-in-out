@@ -1,0 +1,34 @@
+ <!DOCTYPE html>
+<html>
+<title>jquery fade in fade out</title>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+
+    $("#img").hide();
+    $("#img01").hide();
+    $("#img02").hide();
+        
+        $("#fadein").click(function(){
+            $("#img").fadeIn(1000);
+            $("#img01").fadeIn(1);
+            $("#img02").fadeIn(1);
+        });
+
+        $("#fadeout").click(function(){
+            $("#img").fadeOut(1000);
+            $("#img01").fadeOut(1);
+            $("#img02").fadeOut(1);
+        });
+});
+
+</script>
+<body>
+    <img id="img" src="shy.png" alt="">
+    <img id="img01" src="unnamed.jpg" alt="">
+    <img id="img02" src="index.jpg" alt="">
+    <br>
+    <button id="fadein">Fade In</button>
+    <button id="fadeout">Fade Out</button>
+</body>
+</html> 
